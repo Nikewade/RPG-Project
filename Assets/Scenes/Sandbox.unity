@@ -603,6 +603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 452016525}
   - component: {fileID: 452016526}
+  - component: {fileID: 452016527}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -618,7 +619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452016524}
   m_LocalRotation: {x: 0.3372704, y: -0.01934523, z: 0.0069323066, w: 0.9411835}
-  m_LocalPosition: {x: -8.439164, y: 11.97024, z: -13.95322}
+  m_LocalPosition: {x: -8.441703, y: 11.919429, z: -13.89148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1093366314}
@@ -661,6 +662,19 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1093366314}
+--- !u!114 &452016527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452016524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f1e92f1b877d443a2767301e7213a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 452016526}
 --- !u!1001 &461078033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1413,7 +1427,7 @@ MonoBehaviour:
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 18.08
+  m_CameraDistance: 18
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -2673,6 +2687,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 309820656, guid: 0ab86b83834dc004d86d804bea3189d9, type: 3}
+      propertyPath: m_Acceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 309820656, guid: 0ab86b83834dc004d86d804bea3189d9, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 1161458112208617582, guid: 0ab86b83834dc004d86d804bea3189d9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2721,6 +2743,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1803849244338306454, guid: 0ab86b83834dc004d86d804bea3189d9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ab86b83834dc004d86d804bea3189d9, type: 3}
