@@ -3,45 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Mover : MonoBehaviour
+namespace RPG.Movement
 {
-    [SerializeField] Transform target;
-
-    NavMeshAgent nav;
-
-    private void Start()
+    public class Mover : MonoBehaviour
     {
-        nav = GetComponent<NavMeshAgent>();
-    }
+        NavMeshAgent nav;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButton(0))
+        private void Start()
         {
-            MoveToCursor();
+            nav = GetComponent<NavMeshAgent>();
         }
 
-        UpdateAnimator();
-
-    }
-
-    private void MoveToCursor()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        bool hasHit = Physics.Raycast(ray, out hit);
-        if(hasHit)
+        // Update is called once per frame
+        void Update()
         {
-            nav.SetDestination(hit.point);
+            UpdateAnimator();
         }
-    }
 
-    private void UpdateAnimator()
-    {
-        Vector3 velocity = nav.velocity;
-        Vector3 localVelocity = transform.InverseTransformDirection(velocity); // Converted from global to local
-        float speed = localVelocity.z;
-        GetComponent<Animator>().SetFloat("forwardSpeed", speed);
+        public void MoveTo(Vector3 destination)
+        {
+            nav.destination = destination;
+        }
+
+        private void UpdateAnimator()
+        {
+            Vector3 velocity = nav.velocity;
+            Vector3 localVelocity = transform.InverseTransformDirection(velocity); // Converted from global to local
+            float speed = localVelocity.z;
+            GetComponent<Animator>().SetFloat("forwardSpeed", speed);
+        }
     }
 }

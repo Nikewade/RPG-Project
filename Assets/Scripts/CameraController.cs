@@ -2,34 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+namespace RPG.Core
 {
-    [SerializeField] Cinemachine.CinemachineVirtualCamera cam;
-    private float camDistance = 18f;
-
-    // Update is called once per frame
-    void Update()
+    public class CameraController : MonoBehaviour
     {
-        HandleZoom();
-    }
+        [SerializeField] Cinemachine.CinemachineVirtualCamera cam;
+        private float camDistance = 18f;
 
-    private void HandleZoom()
-    {
-        float zoomChangeAmount = 200f;
-
-        if(Input.mouseScrollDelta.y > 0)
+        // Update is called once per frame
+        void Update()
         {
-            camDistance -= zoomChangeAmount * Time.deltaTime;
+            HandleZoom();
         }
 
-        if (Input.mouseScrollDelta.y < 0)
+        private void HandleZoom()
         {
-            camDistance += zoomChangeAmount * Time.deltaTime;
+            float zoomChangeAmount = 200f;
+
+            if (Input.mouseScrollDelta.y > 0)
+            {
+                camDistance -= zoomChangeAmount * Time.deltaTime;
+            }
+
+            if (Input.mouseScrollDelta.y < 0)
+            {
+                camDistance += zoomChangeAmount * Time.deltaTime;
+            }
+
+            camDistance = Mathf.Clamp(camDistance, 5, 18);
+
+            cam.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_CameraDistance = camDistance;
         }
 
-        camDistance = Mathf.Clamp(camDistance, 5, 18);
-
-        cam.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>().m_CameraDistance = camDistance;
     }
-
 }
