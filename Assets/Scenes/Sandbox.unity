@@ -140,6 +140,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f50999216505c048a0b8fbbf14e98ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &47008560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47008554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78289a3eea42b1e49bafb1917cc6b62e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
 --- !u!1001 &56211965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1054,6 +1067,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a346deceb21d0c4781e67a70fbcc1f6, type: 3}
+--- !u!1 &785492447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1161458112208617582, guid: 0ab86b83834dc004d86d804bea3189d9, type: 3}
+  m_PrefabInstance: {fileID: 8434073490636774269}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &785492448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785492447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a968f620c284e75438e9562793924c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &814511203 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 496924, guid: 653c97bd88b4b084d87714542c43ee5a, type: 3}
@@ -1286,7 +1316,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
-  antialiasingMode: 1
+  antialiasingMode: 2
   temporalAntialiasing:
     jitterSpread: 0.75
     sharpness: 0.25
@@ -2747,6 +2777,10 @@ PrefabInstance:
     - target: {fileID: 808793077509628636, guid: 53c8ae6a1d9860b498e2dbcebdcfbee1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392451965099018435, guid: 53c8ae6a1d9860b498e2dbcebdcfbee1, type: 3}
+      propertyPath: m_Radius
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 7335680114607399804, guid: 53c8ae6a1d9860b498e2dbcebdcfbee1, type: 3}
       propertyPath: m_Name
