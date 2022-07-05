@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: health
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: -4562341640838973354, guid: 0ab86b83834dc004d86d804bea3189d9, type: 3}
+      propertyPath: healthPoints
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 309820656, guid: 0ab86b83834dc004d86d804bea3189d9, type: 3}
       propertyPath: m_Speed
       value: 3

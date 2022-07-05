@@ -1172,6 +1172,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3004342972714585261, guid: 0ab86b83834dc004d86d804bea3189d9, type: 3}
+      propertyPath: uniqueIdentifier
+      value: player
+      objectReference: {fileID: 0}
     - target: {fileID: 6260553167414387229, guid: 0ab86b83834dc004d86d804bea3189d9, type: 3}
       propertyPath: weaponDamage
       value: 10
