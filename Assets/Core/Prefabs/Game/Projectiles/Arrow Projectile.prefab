@@ -49,6 +49,10 @@ MonoBehaviour:
   speed: 20
   isHoming: 0
   hitEffect: {fileID: 2108002207613224792, guid: a9043e498fa218447b194a7c73200384, type: 3}
+  maxLifeTime: 10
+  lifeAfterImpact: 2
+  destroyOnHit:
+  - {fileID: 543526334275504837}
 --- !u!65 &4993688935669087147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60,8 +64,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.21, z: 0.7942068}
-  m_Center: {x: 0, y: 0, z: 0.35982803}
+  m_Size: {x: 0.15, y: 0.21, z: 0.6920889}
+  m_Center: {x: 0, y: 0, z: 0.30876908}
 --- !u!1 &3952761512556649308
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +270,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7f49c6920d49ba468b083941d79f2c0, type: 3}
+--- !u!1 &543526334275504837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1659504181823486, guid: c7f49c6920d49ba468b083941d79f2c0, type: 3}
+  m_PrefabInstance: {fileID: 544683892071533883}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &549434364514473359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4750687242688692, guid: c7f49c6920d49ba468b083941d79f2c0, type: 3}

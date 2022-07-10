@@ -1,6 +1,7 @@
 using RPG.Core;
 using System;
 using UnityEngine;
+using RPG.Attributes;
 
 namespace RPG.Combat
 {
@@ -26,9 +27,16 @@ namespace RPG.Combat
                 GameObject weapon = Instantiate(equippedPrefab, handTransform);
                 weapon.name = weaponName;
             }
+
+            // When we do not have an animator override on a weapon, pick up a weapon like the sword and then go to the weapon without an override.. it would still use the sword anim and not the default punching. This fixes it.
+            var overrideController = animator.runtimeAnimatorController as AnimatorOverrideController; // Will return null if can not cast
             if (animatorOverride != null)
             {
                 animator.runtimeAnimatorController = animatorOverride;
+            }
+            else if (overrideController != null)
+            {
+                animator.runtimeAnimatorController = overrideController.runtimeAnimatorController;
             }
             
         }
