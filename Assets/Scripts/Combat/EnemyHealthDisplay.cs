@@ -2,6 +2,7 @@ using System.Collections;
 using System;
 using UnityEngine;
 using TMPro;
+using RPG.Attributes;
 
 namespace RPG.Combat
 {
@@ -19,8 +20,10 @@ namespace RPG.Combat
             TextMeshProUGUI text = GetComponent<TextMeshProUGUI>();
             if(fighter.getTarget() != null)
             {
-                text.SetText(String.Format("{0:0}%", fighter.getTarget().GetPercentage())); // format is setting the 0 index to have 0 decimal points
-            }else
+                Health health = fighter.getTarget();
+                text.SetText(String.Format("{0:0}/{1:0}", health.GetHealthPoints(), health.GetMaxHealthPoints()));
+            }
+            else
             {
                 text.SetText("N/A");
             }

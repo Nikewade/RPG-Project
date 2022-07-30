@@ -3186,7 +3186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7076927223336984042, guid: c76e3e9cb0ec324479663ecb207554da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.941599
+      value: 21.59
       objectReference: {fileID: 0}
     - target: {fileID: 7076927223336984042, guid: c76e3e9cb0ec324479663ecb207554da, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3194,7 +3194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7076927223336984042, guid: c76e3e9cb0ec324479663ecb207554da, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.159663
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 7076927223336984042, guid: c76e3e9cb0ec324479663ecb207554da, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4032,7 +4032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1215781202
 Transform:
   m_ObjectHideFlags: 0
@@ -9209,6 +9209,18 @@ PrefabInstance:
       propertyPath: defaultWeaponName
       value: Sword
       objectReference: {fileID: 0}
+    - target: {fileID: 1059865284155791546, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
+      propertyPath: m_text
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059865284155791546, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059865284155791546, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2163077609192457893, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00006288744
@@ -9261,6 +9273,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ----Core----
       objectReference: {fileID: 0}
+    - target: {fileID: 4560358379532373765, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -456
+      objectReference: {fileID: 0}
+    - target: {fileID: 4560358379532373765, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 283.09998
+      objectReference: {fileID: 0}
     - target: {fileID: 6551452736596193381, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
       propertyPath: m_fontSize
       value: 25
@@ -9271,7 +9291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6712647514281668593, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
       propertyPath: startingLevel
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7114314140244779864, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
       propertyPath: m_RootOrder
@@ -9316,6 +9336,12 @@ PrefabInstance:
     - target: {fileID: 7114314140244779864, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005817868840311749, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
+      propertyPath: m_text
+      value: 'Experience:
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 8419935176764495330, guid: 8d2b87ad6dd168d4dbb2f1e415d52019, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -9395,7 +9421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6919837055091624151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7351614395385596549}

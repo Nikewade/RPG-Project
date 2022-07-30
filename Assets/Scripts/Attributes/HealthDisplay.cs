@@ -17,7 +17,7 @@ namespace RPG.Attributes
         private void Update()
         {
             TextMeshProUGUI text = GetComponent<TextMeshProUGUI>();
-            text.SetText(String.Format("{0:0}%", health.GetPercentage())); // format is setting the 0 index to have 0 decimal points
+            text.SetText(String.Format("{0:0}/{1:0}", health.GetHealthPoints(), health.GetMaxHealthPoints())); // format is setting the 0 index to have 0 decimal points
         }
     }
 }
