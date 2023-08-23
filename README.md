@@ -27,7 +27,7 @@ This RPG Project is designed to be a starting point for building your own top-do
 - **Basic Saving:** Provides the start for a simple save system to persist player progress.
 - **Customizable:** The project was designed in a way to allow for tons of future additions.
   
-**Click to reveal GIFs below**
+**--- Click to reveal GIFs below ---**
 <details><summary> <b>Combat System:</b> Engage in combat with enemies using a basic combat system.</summary>
   
 ![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjZkbHd2czdqOGlqMjIwM283czZmbnVsMzBqcXozcWJrM2k4emNkdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uuAYIcoQEZOAx0kJh1/giphy.gif)
