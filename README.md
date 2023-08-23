@@ -12,5 +12,7 @@
 
 
 
-## Alt
-![](https://github.com/Nikewade/RPG-Project/edit/master/GitHubUploads/Movement.gif)
+<details>
+<summary>Click to Expand: Gameplay GIFs</summary>
+![](https://github.com/Nikewade/RPG-Project/blob/master/GitHubUploads/Movement.gif)
+</details>
